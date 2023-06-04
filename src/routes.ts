@@ -4,7 +4,7 @@ import Constant from "./constant";
 const router = Router();
 
 router.get("/api-health", (_: Request, res: Response) => {
-  res.status(Constant.statusCode.OK).json({
+  res.status(600).json({
     message: Constant.messages.apiHealth,
     success: true,
     statusCode: Constant.statusCode.OK,
