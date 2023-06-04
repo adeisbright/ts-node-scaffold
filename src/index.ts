@@ -1,10 +1,6 @@
 import app from "./app"; 
-import infoLogger from "./common/logging/info-logger";
+import Config from "./config";
 
-app.listen(3500 , () => {
-    console.log("Server Started")
-    infoLogger.log({
-        level:"info",
-        message:"Server Started on PORT 3500"
-    })
+app.listen(Config.serverPort , () => {
+    console.log(`Server Started on ${Config.serverPort}`)
 })
