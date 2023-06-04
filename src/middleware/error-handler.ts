@@ -40,15 +40,12 @@ const errorHandler = (
         success : false
     };
 
-
     if (err instanceof ApplicationError) {
         body.message = Constant.messages.serverError;
-        response(res,  body);
+        return response(res,  body);
 
     }
-    else {
-        response(res,  body);
-    }
+    return response(res,  body);
 };
 
 export default errorHandler;

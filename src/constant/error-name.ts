@@ -3,7 +3,8 @@ const ERROR_NAME = {
     serverError: "ApplicationError",
     notAuthorize: "UnauthorizeRequestError",
     forbidden: "ForbiddenError",
-    notFound: "NotFoundError"
+    notFound: "NotFoundError",
+    pathNotFound :"PathNotFound"
 };
 
 export default ERROR_NAME;
