@@ -37,6 +37,8 @@ the content with yours
 3. Drop our remote, and point our remote to your repository by doing the following:
 
 git remote remove origin 
+
+
 git remote add origin <your-own-remote> 
 
 4. Resolve Commit History with :
